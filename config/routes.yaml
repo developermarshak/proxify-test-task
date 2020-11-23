@@ -1,0 +1,27 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+test:
+  path: /test
+  controller: App\Controller\TestController::test
+
+static_events:
+  path: /static/events
+  controller: App\Controller\StaticDataController::events
+
+static_outcomes:
+  path: /static/outcomes/{outcomesIds}
+  controller: App\Controller\StaticDataController::outcomes
+
+static_events_full:
+  path: /static/events/full/{eventsIds}
+  controller: App\Controller\StaticDataController::eventsFull
+
+static_markets:
+  path: /static/markets/{marketsIds}
+  controller: App\Controller\StaticDataController::markets
+
+#static_specifiers:
+#  path: /static/specifiers/{specifiersIds}
+#  controller: App\Controller\StaticDataController::specifiers
